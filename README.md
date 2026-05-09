@@ -8,18 +8,7 @@ FMHY maintains a massive wiki of free tools, streaming sites, software alternati
 
 ## Install
 
-This repo contains a single `SKILL.md` file. Place it under a category subdirectory inside your agent's skills directory. For example:
-
-```
-<your-skills-directory>/
-└── research/
-    └── fmhy-net/
-        └── SKILL.md
-```
-
-The exact path depends on your agent framework. If your framework supports `SKILL.md` files with YAML frontmatter, it should pick it up automatically.
-
-You can also skip the framework entirely and just use the shell commands below.
+Put `SKILL.md` in its own directory.
 
 ## Quick usage
 
