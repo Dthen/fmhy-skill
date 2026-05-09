@@ -8,7 +8,11 @@ FMHY maintains a massive wiki of free tools, streaming sites, software alternati
 
 ## Install
 
-Put `SKILL.md` in its own directory.
+Clone or copy this repo into a subdirectory of your agent's skills directory. The main thing each platform needs to find is the `SKILL.md` file.
+
+```bash
+git clone https://github.com/Dthen/fmhy-skill.git
+```
 
 ## Quick usage
 
