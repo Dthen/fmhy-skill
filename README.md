@@ -1,6 +1,6 @@
 # FMHY.net Search Skill
 
-A simple skill for searching the [FMHY.net](https://fmhy.net) free media wiki via their single-page API.
+A simple, agent-agnostic skill for searching the [FMHY.net](https://fmhy.net) free media wiki via their single-page API.
 
 ## What it does
 
