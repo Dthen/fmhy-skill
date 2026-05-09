@@ -1,18 +1,14 @@
-# FMHY.net Search Skill for Hermes Agent
+# FMHY.net Search Skill
 
 A simple skill for searching the [FMHY.net](https://fmhy.net) free media wiki via their single-page API.
 
 ## What it does
 
-FMHY maintains a massive wiki of free tools, streaming sites, software alternatives, and resources. This skill downloads the entire site as a single markdown dump (~1.8 MB) and searches it with `grep`/`rg`.
+FMHY maintains a massive wiki of free tools, streaming sites, software alternatives, and resources. This skill downloads the entire site as a single markdown dump (~1.8 MB) and searches it with standard shell tools (`grep`, `sed`, optionally `rg`).
 
 ## Install
 
-Copy or symlink into your Hermes skills directory:
-
-```bash
-cp -r fmhy-net ~/.hermes/skills/research/
-```
+Drop the `SKILL.md` into your agent's skills directory, or just use the shell commands directly.
 
 ## Quick usage
 
@@ -56,4 +52,8 @@ sed -n '/# ► Audio/,/# ► /p' "$TMPFILE" | head -n 50   # dump a section
 
 ## License
 
-MIT
+BSD Zero Clause (0BSD)
+
+Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE.

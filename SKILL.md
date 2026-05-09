@@ -2,12 +2,8 @@
 name: fmhy-net
 description: "Use when searching for free media, tools, software, or resources compiled on FMHY.net. Queries the single-page API and searches the full markdown dump via curl + grep/rg."
 version: 1.0.0
-author: Hermes Agent
-license: MIT
-metadata:
-  hermes:
-    tags: [research, resources, fmhy, free-media, piracy, tools]
-    related_skills: [reddit-content-reader, web_search]
+author: Dthen
+license: 0BSD
 ---
 
 # FMHY.net Single-Page Search
