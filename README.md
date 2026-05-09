@@ -6,9 +6,23 @@ A simple skill for searching the [FMHY.net](https://fmhy.net) free media wiki vi
 
 FMHY maintains a massive wiki of free tools, streaming sites, software alternatives, and resources. This skill downloads the entire site as a single markdown dump (~1.8 MB) and searches it with standard shell tools (`grep`, `sed`, optionally `rg`).
 
-## Install
+## Install (Hermes Agent)
 
-Drop the `SKILL.md` into your agent's skills directory, or just use the shell commands directly.
+```bash
+# Clone into a local tap directory
+git clone https://github.com/Dthen/fmhy-skill.git ~/.hermes/skills/taps/fmhy-skill
+
+# Or install via the skills hub
+hermes skills install fmhy-net  # if published
+```
+
+Then drop the `SKILL.md` into a properly namespaced directory under your skills path:
+```bash
+mkdir -p ~/.hermes/skills/research/fmhy-net
+cp /path/to/SKILL.md ~/.hermes/skills/research/fmhy-net/
+```
+
+You can also just use the shell commands directly without any framework.
 
 ## Quick usage
 
@@ -29,7 +43,6 @@ rm -f "$TMPFILE"
 ## Browse mode
 
 When you know the area but not the keyword:
-
 ```bash
 grep "^# ►" "$TMPFILE"           # list all categories
 sed -n '/# ► Audio/,/# ► /p' "$TMPFILE" | head -n 50   # dump a section
